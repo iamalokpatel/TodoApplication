@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* body {
+  width: 100vw;
+  background-color: rgb(247, 242, 242);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgb(236, 244, 244);
+  height: 80px;
+  width: 100%;
+  position: relative;
+  background-color: white;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+
+  font-size: 60px;
+  font-weight: 900;
+  margin-top: 120px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.TodoDePage {
+  width: 1125px;
+  height: 1823px;
+  margin-top: 40px;
+  margin-left: 214px;
+  display: flex;
+  column-gap: 72px;
+}
+.TodoDePage .TodoList {
+  width: 401px;
+  height: 1759px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.TodoDePage .TodoForm {
+  width: 452px;
+  height: 576px;
+  border: solid black 2px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.TodoListMain {
+  background-color: burlywood;
+}
+
+.Todolists {
+  height: 500px;
+  width: 500px;
+  margin: -50px 0 0 -50px;
+}
+
+.Todolists .TodoListContent {
+  width: 500px;
+  justify-items: center;
+
+  width: 500px;
+  height: 500px;
+}
+
+.TodoListContent a {
+  width: 450px;
+  height: 150px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px 20px 10px 50px;
+  border: solid black 1px;
+  border-radius: 8px;
+}
+
+.TodoForm h2,
+div {
+  justify-content: center;
+  height: 50px;
+  width: 500px;
+  margin-left: 50px;
+}
+.TodoForm .Title {
+  width: 360px;
+  height: 40px;
+  padding: 8px 5px 3px 10px;
+  margin: 50px 20px 0 40px;
+  border-radius: 8px;
+}
+.TodoForm .Description {
+  width: 370px;
+  height: 60px;
+  padding: 42px 3px 3px 30px;
+  margin: 50px 20px 0 26px;
+  border-radius: 8px;
+}
+
+.TodoForm .Button {
+  width: 90px;
+  height: 30px;
+
+  display: flex;
+  margin: 40px 20px 0 175px;
+  padding: 5px 3px 3px 10px;
+  border-radius: 8px;
+}
+.TodoForm h2 {
+  display: flex;
+  margin-right: 50px -50px -50px 0;
+}
