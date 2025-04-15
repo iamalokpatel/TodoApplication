@@ -20,14 +20,11 @@ export default function TodoForm() {
 
     setTitle("");
     setDescription("");
-    window.location.reload(); // refresh to see new todo
+    window.location.reload();
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="space-y-4  bg-white p-6 rounded-xl shadow-md pl-8 p-4 w-1/3 TodoForm"
-    >
+    <form onSubmit={handleSubmit} className=" TodoForm">
       <h2 className="text-xl font-semibold">New Addition</h2>
       <hr></hr>
 
@@ -36,7 +33,7 @@ export default function TodoForm() {
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title"
         required
-        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 Title"
+        className="border outline-none  Title"
       />
 
       <textarea
@@ -44,13 +41,10 @@ export default function TodoForm() {
         onChange={(e) => setDescription(e.target.value)}
         placeholder="Description"
         required
-        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 Description"
+        className=" border  outline-none Description"
       />
 
-      <button
-        type="submit"
-        className=" Button bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-all"
-      >
+      <button type="submit" className=" Button">
         Add Todo
       </button>
     </form>

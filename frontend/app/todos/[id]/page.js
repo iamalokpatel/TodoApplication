@@ -33,24 +33,18 @@ export default function TodoDetail() {
       <input
         value={todo.title}
         onChange={(e) => setTodo({ ...todo, title: e.target.value })}
-        className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 Title"
+        className="w-full p-3 border rounded-md focus:outline-none Title"
       />
       <textarea
         value={todo.description}
         onChange={(e) => setTodo({ ...todo, description: e.target.value })}
-        className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 Description"
+        className=" outline-none  Description"
       />
       <div className="flex gap-4">
-        <button
-          onClick={handleDelete}
-          className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 DeleteButton"
-        >
+        <button onClick={handleDelete} className=" DeleteButton">
           Delete
         </button>
-        <button
-          onClick={handleUpdate}
-          className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 UpdateButton"
-        >
+        <button onClick={handleUpdate} className=" UpdateButton">
           Update
         </button>
       </div>

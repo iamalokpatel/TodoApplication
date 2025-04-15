@@ -9,8 +9,8 @@ export default async function TodosPage() {
   });
   const { todos } = await res.json();
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-4xl mx-auto space-y-8 TodoDePage">
+    <div className="p-6">
+      <div className=" TodoDePage">
         <div className="TodoList">
           <TodoList todos={todos} />
         </div>

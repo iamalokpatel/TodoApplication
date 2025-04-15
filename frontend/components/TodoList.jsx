@@ -8,17 +8,17 @@ export default function TodoList({ todos }) {
 
   return (
     <div className="Todolists">
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 w-1/3 pl-4 p-4 TodoListContent">
+      <div className="grid TodoListContent">
         {todos.map((todo) => (
           <Link
             key={todo._id}
             href={`/todos/${todo._id}`}
-            className="p-4 bg-white rounded-xl shadow hover:shadow-lg transition-all border border-gray-200 no-underline TodoListst"
+            className="no-underline TodoListst"
           >
-            <h1 className="text-lg font-bold text-blue-600">{todo.title}</h1>
+            <h2 className=" Title">{todo.title}</h2>
             <div>
-              <h3 className="text-gray-700 mt-2">{todo.description}</h3>
-              <p className="text-gray-700 mt-2">{todo.date}</p>
+              <h3 className="Description">{todo.description}</h3>
+              <p className="Date">{todo.date}</p>
             </div>
           </Link>
         ))}
