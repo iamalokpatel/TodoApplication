@@ -29,7 +29,7 @@
   width: 1125px;
   height: 1823px;
   margin-top: 40px;
-  margin-left: 214px;
+  margin-left: 114px;
   display: flex;
   column-gap: 72px;
 }
@@ -43,7 +43,7 @@
 .TodoDePage .TodoForm {
   width: 452px;
   height: 576px;
-  border: solid black 2px;
+  border: solid black 1px;
   border-radius: 8px;
   background-color: white;
 }
@@ -110,4 +110,68 @@ div {
 .TodoForm h2 {
   display: flex;
   margin-right: 50px -50px -50px 0;
+}
+.EditForm {
+  background-color: rgb(246, 239, 239);
+  height: 500px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.EditForm h1 {
+  height: 80px;
+  width: 250px;
+  padding: 6px 0 0 9px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.EditForm .Title {
+  height: 40px;
+  width: 198px;
+  display: flex;
+  padding: 6px 0 0 9px;
+  margin-bottom: 20px;
+  margin-left: 46px;
+  align-items: center;
+  padding: 3px 0 0 100px;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.EditForm .Description {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  padding: 42px 3px 3px 30px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 45px;
+  justify-content: center;
+  padding: 30px 0 0 100px;
+  border-radius: 6px;
+}
+.UpdateButton {
+  height: 25px;
+  width: 100px;
+  background-color: rgb(242, 248, 246);
+  display: flex;
+  margin-right: 200px;
+  padding: 6px 4px 4px 25px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.DeleteButton {
+  background-color: rgba(253, 251, 250, 0.938);
+  height: 25px;
+  width: 100px;
+  display: flex;
+  margin-right: 60px;
+  padding: 6px 0 4px 25px;
+  align-items: center;
+  border-radius: 5px;
 }

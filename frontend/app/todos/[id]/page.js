@@ -28,30 +28,30 @@ export default function TodoDetail() {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-white p-6 rounded-xl shadow space-y-4">
+    <div className="max-w-xl mx-auto bg-white p-6 rounded-xl shadow space-y-4 EditForm">
       <h1 className="text-2xl font-bold">Edit Todo</h1>
       <input
         value={todo.title}
         onChange={(e) => setTodo({ ...todo, title: e.target.value })}
-        className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 Title"
       />
       <textarea
         value={todo.description}
         onChange={(e) => setTodo({ ...todo, description: e.target.value })}
-        className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 Description"
       />
       <div className="flex gap-4">
         <button
-          onClick={handleUpdate}
-          className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
-        >
-          Update
-        </button>
-        <button
           onClick={handleDelete}
-          className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700"
+          className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 DeleteButton"
         >
           Delete
+        </button>
+        <button
+          onClick={handleUpdate}
+          className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 UpdateButton"
+        >
+          Update
         </button>
       </div>
     </div>
